@@ -1,10 +1,9 @@
 {
-    "id": "obsidian-custom-theme",
-    "name": "Itnia Theme",
-    "version": "1.0.0",
-    "minAppVersion": "1.0.0",
-    "description": "My custom Obsidian theme",
-    "author": "Sasha Chairkin",
-    "authorUrl": "",
-    "isDesktopOnly": false
+  "id": "obsidian-custom-settings",
+  "name": "Itnia Theme",
+  "version": "1.0.0",
+  "minAppVersion": "1.0.0",
+  "description": "My custom Obsidian settings",
+  "author": "Sasha Chairkin",
+  "isDesktopOnly": false
 }
