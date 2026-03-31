@@ -1,0 +1,255 @@
+/* 
+.mod-left : .mod-sidedock : .mod-root - разбивка интерфеса на 3 части
+
+
+Obisdian:
+Мне нужен для хранения долговременных записей
+Здесь будут все мои наработки с накоплением храниться
+Только текстовый контент
+
+TODO::
+ - вкладки
+ - боковое меню
+ - элементы документа
+ - общая цветовая гамма
+ - 
+ - 
+
+*/
+
+/* body {
+    --color-base-00: #ffffff;
+    --color-base-05: #fcfcfc;
+    --color-base-10: #fafafa;
+    --color-base-20: #f6f6f6;
+    --color-base-25: #e3e3e3;
+    --color-base-30: #e0e0e0;
+    --color-base-35: #d4d4d4;
+    --color-base-40: #bdbdbd;
+    --color-base-50: #ababab;
+    --color-base-60: #707070;
+    --color-base-70: #161515;
+    --color-base-100: #222222;
+} */
+
+/* -----------------------------------------------------------------------------------------------------------
+ * Вкладки
+ ----------------------------------------------------------------------------------------------------------- */
+
+body {
+    --header-height: 32px;
+}
+
+.mod-root .workspace-tab-header-container-inner {
+    margin-top: 1.5px;
+}
+
+.mod-root .workspace-tab-header-container .workspace-tab-header.is-active {
+    margin-bottom: 3px;
+    border-radius: 6px;
+    border: none;
+    box-shadow: none;
+    background-color: #ddd;
+    padding: 1px 3px;
+    margin-left: 2px;
+}
+
+.mod-root .workspace-tab-header-container .workspace-tab-header.is-active::before,
+.mod-root .workspace-tab-header-container .workspace-tab-header.is-active::after {
+    content: none;
+}
+
+
+/* -----------------------------------------------------------------------------------------------------------
+ * Навигация по файлам
+ ----------------------------------------------------------------------------------------------------------- */
+
+:root {
+    --folder-color-0: #fc5c65;
+    --folder-color-1: #fd9644;
+    --folder-color-2: #fed330;
+    --folder-color-3: #26de81;
+    --folder-color-4: #2bcbba;
+    --folder-color-5: #45aaf2;
+    --folder-color-6: #4b7bec;
+    --folder-color-7: #a55eea;
+    --folder-color-8: #d1d8e0;
+    --folder-color-9: #778ca3;
+    --folder-color-a: #eb3b5a;
+    --folder-color-b: #fa8231;
+    --folder-color-c: #f7b731;
+    --folder-color-f: #20bf6b;
+    --folder-color-e: #0fb9b1;
+    --folder-color-f: #2d98da;
+    --folder-color-g: #3867d6;
+    --folder-color-h: #8854d0;
+    --folder-color-i: #a5b1c2;
+    --folder-color-j: #4b6584;
+    --folder-color-k: #fc5c65;
+    --folder-color-l: #fd9644;
+    --folder-color-m: #fed330;
+    --folder-color-n: #26de81;
+    --folder-color-o: #2bcbba;
+    --folder-color-p: #45aaf2;
+    --folder-color-q: #4b7bec;
+    --folder-color-r: #a55eea;
+    --folder-color-s: #d1d8e0;
+    --folder-color-t: #778ca3;
+    --folder-color-u: #eb3b5a;
+    --folder-color-v: #fa8231;
+    --folder-color-w: #f7b731;
+    --folder-color-x: #20bf6b;
+    --folder-color-y: #0fb9b1;
+    --folder-color-z: #2d98da;
+}
+
+.nav-folder:nth-child(20n + 2) {
+    --nav-folder-color: var(--folder-color-0);
+}
+
+.nav-folder:nth-child(20n + 3) {
+    --nav-folder-color: var(--folder-color-1);
+}
+
+.nav-folder:nth-child(20n + 4) {
+    --nav-folder-color: var(--folder-color-2);
+}
+
+.nav-folder:nth-child(20n + 5) {
+    --nav-folder-color: var(--folder-color-3);
+}
+
+.nav-folder:nth-child(20n + 6) {
+    --nav-folder-color: var(--folder-color-4);
+}
+
+.nav-folder:nth-child(20n + 7) {
+    --nav-folder-color: var(--folder-color-5);
+}
+
+.nav-folder:nth-child(20n + 8) {
+    --nav-folder-color: var(--folder-color-6);
+}
+
+.nav-folder:nth-child(20n + 9) {
+    --nav-folder-color: var(--folder-color-7);
+}
+
+.nav-folder:nth-child(20n + 10) {
+    --nav-folder-color: var(--folder-color-8);
+}
+
+.nav-folder:nth-child(20n + 11) {
+    --nav-folder-color: var(--folder-color-9);
+}
+
+.nav-folder:nth-child(20n + 12) {
+    --nav-folder-color: var(--folder-color-a);
+}
+
+.nav-folder:nth-child(20n + 13) {
+    --nav-folder-color: var(--folder-color-b);
+}
+
+.nav-folder:nth-child(20n + 14) {
+    --nav-folder-color: var(--folder-color-c);
+}
+
+.nav-folder:nth-child(20n + 15) {
+    --nav-folder-color: var(--folder-color-d);
+}
+
+.nav-folder:nth-child(20n + 16) {
+    --nav-folder-color: var(--folder-color-e);
+}
+
+.nav-folder:nth-child(20n + 17) {
+    --nav-folder-color: var(--folder-color-f);
+}
+
+.nav-folder:nth-child(20n + 18) {
+    --nav-folder-color: var(--folder-color-g);
+}
+
+.nav-folder:nth-child(20n + 19) {
+    --nav-folder-color: var(--folder-color-h);
+}
+
+.nav-folder:nth-child(20n) {
+    --nav-folder-color: var(--folder-color-i);
+}
+
+.nav-folder:nth-child(20n + 1) {
+    --nav-folder-color: var(--folder-color-j);
+}
+
+/* body.bt-toggle-colorful-folder:is(.folder-style-change-options-colorful-tab-liked, .folder-style-change-options-colorful-border) .nav-files-container>div>.tree-item.nav-folder:nth-child(20n+2)::before,
+body.bt-toggle-colorful-folder:is(.folder-style-change-options-colorful-tab-liked, .folder-style-change-options-colorful-border) .nav-files-container>div>.tree-item.nav-folder:nth-child(20n+2) {
+    --tab-color: var(--Fold0);
+}
+    */
+
+.nav-files-container>div>.nav-folder.is-collapsed {
+    /* background-color: var(--nav-folder-color); */
+}
+
+.nav-files-container>div>.nav-folder {
+    --nav-folder-children-color: var(--nav-folder-color);
+}
+
+.nav-files-container>div>.nav-folder>.nav-folder-title,
+.nav-files-container>div>.nav-folder>.nav-folder-children .nav-folder-title {
+    /* background-color: var(--nav-folder-children-color); */
+    /* border: 1px solid; */
+    /* border-color: var(--nav-folder-children-color); */
+    /* color: var(--nav-folder-children-color); */
+    color: black;
+    /* font-weight: 600; */
+}
+
+.tree-item-children {
+    border-inline-start: none;
+
+}
+
+/* -----------------------------------------------------------------------------------------------------------
+ * Иконки в навигации файлов
+ ----------------------------------------------------------------------------------------------------------- */
+
+/* Markdown */
+.nav-file-title[data-path$=".md"]::before {
+    content: "📝";
+}
+
+/* PDF */
+.nav-file-title[data-path$=".pdf"]::before {
+    content: "📕";
+}
+
+/* Изображения */
+.nav-file-title[data-path$=".png"]::before,
+.nav-file-title[data-path$=".jpg"]::before {
+    content: "🖼️";
+}
+
+/* Папки */
+.nav-folder-title::before {
+    content: "📁";
+    margin-right: 6px;
+}
+
+
+/* -----------------------------------------------------------------------------------------------------------
+ * Окно вывода
+ ----------------------------------------------------------------------------------------------------------- */
+
+body {
+    /* Ширына окна */
+    --file-line-width: 960px;
+    --text-normal: #272531;
+}
+
+/* Зоголовок по центру */
+.inline-title:not([data-level]) {
+    display: none;
+}
