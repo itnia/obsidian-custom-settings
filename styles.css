@@ -1,3 +1,41 @@
+/* -----------------------------------------------------------------------------------------------------------
+ * Блок кода
+ ----------------------------------------------------------------------------------------------------------- */
+
+/* popup выбора языка блока кода */
+.codeblock-lang-popup {
+    /* position: fixed;
+    z-index: 9999;
+    background: var(--background-secondary, #2b2b2b);
+    border: 1px solid var(--background-modifier-border, #444);
+    border-radius: 8px;
+    padding: 4px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3); */
+}
+
+.codeblock-lang-popup-input {
+    /* width: 120px;
+    font-size: 13px;
+    font-family: inherit;
+    color: var(--text-normal, #ddd);
+    background: var(--background-primary, #1e1e1e);
+    border: 1px solid var(--background-modifier-border, #555);
+    padding: 4px 8px;
+    border-radius: 6px;
+    outline: none; */
+}
+
+.codeblock-lang-popup-input:focus {
+    /* border-color: var(--interactive-accent, #7b6cd9);
+    box-shadow: 0 0 0 2px rgba(123, 108, 217, 0.25); */
+}
+
+
+/* -----------------------------------------------------------------------------------------------------------
+ * ...
+ ----------------------------------------------------------------------------------------------------------- */
+
+
 /* 
 .mod-left : .mod-sidedock : .mod-root - разбивка интерфеса на 3 части
 
@@ -187,7 +225,7 @@ body {
 body.bt-toggle-colorful-folder:is(.folder-style-change-options-colorful-tab-liked, .folder-style-change-options-colorful-border) .nav-files-container>div>.tree-item.nav-folder:nth-child(20n+2) {
     --tab-color: var(--Fold0);
 }
-    */
+*/
 
 .nav-files-container>div>.nav-folder.is-collapsed {
     /* background-color: var(--nav-folder-color); */
